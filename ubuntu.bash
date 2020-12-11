@@ -1,22 +1,22 @@
-chmod u=rwx file-name
+chmod u=rwx code.py
 
 
 # To set permissions to read and execute (rx) for the group owner (g) use:
 
-chmod g=rx file-name
+chmod g=rx code.py
 
 
 # And finally, to set permissions to read (r) for others (o) use:
 
-chmod o=r file-name
+chmod o=r code.py
 
 
 # These can be set all at once by separating the permission sets by commas.
 
 
-chmod u=rwx,g=rx,o=r file-name
+chmod u=rwx,g=rx,o=r code.py
 
-ls -l file-name
+ls -l code.py
 
 
 
@@ -25,12 +25,12 @@ ls -l file-name
 
 # Take away read permission for others:
 
-chmod o-r file-name
+chmod o-r code.py
 
 
 # Add write permission for the group:
 
-chmod g+w file-name
+chmod g+w code.py
 
 
  # ===================
@@ -43,17 +43,17 @@ chmod g+w file-name
 
 # For example, change the group owner keeping the user owner the same:
 
-chown admin file-name
+chown admin code.py
 
-ls -l file-name
+ls -l code.py
 
 
 
 # To change both the user owner and the group owner:
 
 
-sudo chown janice:staff file-name
+sudo chown janice:staff code.py
 
 # Password:   (give your administrator password here)
 
-ls -l file-name
+ls -l code.py
